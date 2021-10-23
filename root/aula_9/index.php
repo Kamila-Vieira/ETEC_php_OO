@@ -1,9 +1,8 @@
-<body>
  <?php
- 	include_once 'classes/Pessoa.php';
+ 	include_once 'Pessoa.php';
 
-	$p = new Pessoa();
-	$p->setNome("Zeca");
- 	echo $p->getNome();
+	$pessoa = new Pessoa();
+	$pessoa->setNome("Zeca");
+ 	echo 'Nome: '.$pessoa->getNome();
  ?>
-</body>
+=

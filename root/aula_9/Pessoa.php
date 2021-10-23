@@ -1,6 +1,6 @@
 <?php
  class Pessoa{
-  private $nome;
+  protected $nome;
  
   public function setNome($nome)
   {
