@@ -1,4 +1,4 @@
-  **- Criar Banco de dados "projeto_final" e tabelas "usuario" e "formacaoAcademica".**<br />
+  **- Criar Banco de dados "projeto_final" e tabelas "usuario" e "formacaoAcademica".**<br /><br />
   ``
     CREATE SCHEMA IF NOT EXISTS `projeto_final` DEFAULT CHARACTER SET latin1 ;
     USE `projeto_final` ;
@@ -33,8 +33,8 @@
     SET SQL_MODE=@OLD_SQL_MODE;
     SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
     SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
-  ``
-  **- Criar tabela "experienciaprofissional".**<br />
+  ``<br /><br />
+  **- Criar tabela "experienciaprofissional".**<br /><br />
   ``
     CREATE TABLE `projeto_final`.`experienciaprofissional` (
       `idexperienciaprofissional` INT NOT NULL AUTO_INCREMENT,
@@ -50,8 +50,8 @@
         REFERENCES `projeto_final`.`usuario` (`idusuario`)
         ON DELETE NO ACTION
         ON UPDATE NO ACTION);
-  ``
-  **- Criar tabela "outrasformacoes".**<br />
+  ``<br /><br />
+  **- Criar tabela "outrasformacoes".**<br /><br />
   ``
     CREATE TABLE IF NOT EXISTS `projeto_final`.`outrasformacoes` (
       `idoutrasformacoes` INT(11) NOT NULL AUTO_INCREMENT,
