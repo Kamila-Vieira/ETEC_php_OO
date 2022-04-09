@@ -31,7 +31,7 @@
         $usuario = new UsuarioController();
         $result = $usuario->visualizarUsuario($_POST['id']);
         if($result){
-          echo ''.$result->nome.' Currículo';
+          echo ''.$result->nome.'';
         }
       ?>
     </h1>

@@ -8,7 +8,7 @@
   {
     include_once '../View/primeiroAcesso.php';
   }
-  else
+  else  
   {
     if(isset($_POST["btnCadastrar"]))
     {
@@ -75,7 +75,13 @@
     require_once '../Controller/UsuarioController.php';
     $uController = new UsuarioController();
 
-    if($uController->atualizar($_POST["txtID"], $_POST["txtNome"], $_POST["txtCPF"], $_POST["txtEmail"], date('Y-m-d', strtotime($_POST['txtData']))))
+    if($uController->atualizar(
+      $_POST["txtID"], 
+      $_POST["txtNome"], 
+      $_POST["txtCPF"], 
+      $_POST["txtEmail"], 
+      date('Y-m-d', strtotime($_POST['txtData']))
+      ))
     {
       include_once '../View/atualizacaoRealizada.php';
     }
